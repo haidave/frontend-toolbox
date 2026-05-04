@@ -1,5 +1,6 @@
 # Each top-level skill directory has a domain owner who reviews PRs touching it.
 # Bootstrap owners until per-domain owners are recruited.
 
-*                           @haidave
-/skills/frontend-design/    @haidave
+*                                @haidave
+/skills/frontend-design/         @haidave
+/skills/fixing-accessibility/    @haidave

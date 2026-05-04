@@ -29,6 +29,7 @@ npx skills update
 | Skill | What it does | Owner |
 |---|---|---|
 | [`frontend-design`](skills/frontend-design/SKILL.md) | Distinctive, production-grade frontend UIs that avoid generic AI aesthetics. Vendored from [anthropics/skills](https://github.com/anthropics/skills). | @haidave |
+| [`fixing-accessibility`](skills/fixing-accessibility/SKILL.md) | Fix a11y issues (ARIA, keyboard, focus, contrast, forms) with priority-ranked rules. Plays well with shadcn/Radix/Base UI primitives. Vendored from [ibelick/ui-skills](https://github.com/ibelick/ui-skills). | @haidave |
 
 More skills land as domain owners are recruited. See [CODEOWNERS](CODEOWNERS).
 
