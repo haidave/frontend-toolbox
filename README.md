@@ -16,13 +16,16 @@ npx skills add haidave/frontend-toolbox -a claude-code -a codex -a cursor
 npx skills add haidave/frontend-toolbox -a claude-code --skill frontend-design -g
 ```
 
-Update later:
+`npx skills` writes to `.agents/skills/<name>/` (the universal location for Codex / Cursor / others) and symlinks `.claude/skills/<name>/` for Claude Code. Default is symlink; pass `--copy` for files.
+
+## Updates
 
 ```bash
-npx skills update
+npx skills update                  # refresh all installed skills
+npx skills update <skill-name>     # refresh one
 ```
 
-`npx skills` writes to `.claude/skills/`, `.cursor/skills/`, or `.codex/skills/` depending on the agent flag. By default it symlinks; pass `--copy` for file copies.
+Skills track the latest commit on `main` — there's no version pinning yet. Breaking changes get announced in the team Slack channel and tagged as a [GitHub Release](https://github.com/strvcom/frontend-toolbox/releases). See [CONTRIBUTING.md](CONTRIBUTING.md) for the full update protocol.
 
 ## Available skills
 
@@ -35,9 +38,7 @@ More skills land as domain owners are recruited. See [CODEOWNERS](CODEOWNERS).
 
 ## Contributing
 
-- Each top-level dir under `skills/` has an owner in [CODEOWNERS](CODEOWNERS) who reviews PRs touching it
-- New skill = new dir under `skills/<name>/` with a `SKILL.md` — see the [spec](https://agentskills.io/specification)
-- Conventional Commits for the changelog
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a skill (vendor or author), commit conventions, breaking-change protocol, and review flow.
 
 ## License
 
